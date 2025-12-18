@@ -92,11 +92,11 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. **Open the Notebook:** Load `final_proj_v2.ipynb` in Jupyter or VS Code.
-2. **Dataset Generation:** Run the first few cells to download MNIST and generate the 64 \times 64 synthetic samples.
-3. **PCA Grid Search:** Execute the K-Fold CV section to find the optimal k for the MLP.
-4. **Training:** Run the final training cells for both the optimized PCA+MLP and the CNN.
-5. **Visualizations:** Use the provided plotting functions to see the scatter plots and qualitative results (bounding boxes overlaid on test images).
+1. Open the Notebook: Load `final_proj_v2.ipynb` in Jupyter or VS Code.
+2. Dataset Generation: Run the first few cells to download MNIST and generate the 64 \times 64 synthetic samples.
+3. PCA Grid Search: Execute the K-Fold CV section to find the optimal k for the MLP.
+4. Training: Run the final training cells for both the optimized PCA+MLP and the CNN.
+5. Visualizations: Use the provided plotting functions to see the scatter plots and qualitative results (bounding boxes overlaid on test images).
 
 ---
 
@@ -104,6 +104,6 @@ pip install -r requirements.txt
 
 The project provides a comprehensive comparison through:
 
-* **Quantitative Analysis:** MSE and IoU comparison tables.
-* **Convergence Analysis:** CV Mean MSE vs. k plots.
-* **Qualitative Analysis:** Visual display of 12 random test samples showing the "Ground Truth" (Green) vs. "Prediction" (Red).
+Quantitative Analysis: MSE and IoU comparison tables.
+Convergence Analysis: CV Mean MSE vs. k plots.
+Qualitative Analysis: Visual display of 12 random test samples showing the "Ground Truth" (Green) vs. "Prediction" (Red).
