@@ -20,11 +20,11 @@ The objective is to analyze how much spatial information is preserved through gl
 
 ## Task Definition
 
-The task is a **regression problem** where the models must predict the bounding box of an MNIST digit randomly placed and scaled on a 64 \times 64 grayscale canvas.
+The task is a **regression problem** where the models must predict the bounding box of an MNIST digit randomly placed and scaled on a 64 $\times 64$ grayscale canvas.
 
 ### Input
 
-* 64 \times 64 Grayscale images.
+* 64 $\times$ 64 Grayscale images.
 
 ### Output
 
@@ -32,7 +32,7 @@ The models predict a 4-element vector representing the normalized bounding box:
 
 
 
-where (x_c, y_c) is the center of the box, and (w, h) are the width and height.
+where $(x_c, y_c)$ is the center of the box, and $(w, h)$ are the width and height.
 
 ---
 
@@ -40,11 +40,11 @@ where (x_c, y_c) is the center of the box, and (w, h) are the width and height.
 
 ### 1. Synthetic Dataset Generation
 
-Since MNIST digits are 28 \times 28, we generate a 64 \times 64 canvas, randomly scale the digit, and place it at a random valid location. The ground truth bounding box is calculated during this synthesis process.
+Since MNIST digits are 28 $\times$ 28, we generate a 64 $\times$ 64 canvas, randomly scale the digit, and place it at a random valid location. The ground truth bounding box is calculated during this synthesis process.
 
 ### 2. Feature Extraction & Optimization (PCA+MLP)
 
-* **K-Fold Cross-Validation:** We perform a 5-fold CV over a grid of PCA components k \in \{16, 32, 64, 128, 256, 512\}.
+* **K-Fold Cross-Validation:** We perform a 5-fold CV over a grid of PCA components $k$ \in $\{16, 32, 64, 128, 256, 512\}$.
 * **Optimization Criterion:** The optimal k is selected based on the highest **Mean Intersection over Union (IoU)**:
 
 
