@@ -78,6 +78,18 @@ To run this project, you need the following Python libraries:
 * `torch`
 * `torchvision`
 
+## Environment Setup
+
+We recommend using a virtual environment.
+
+```bash
+python -m venv venv
+source venv/bin/activate   # macOS / Linux
+# venv\Scripts\activate    # Windows
+
+pip install -r requirements.txt
+
+
 ## Usage
 
 1. **Open the Notebook:** Load `final_proj_v2.ipynb` in Jupyter or VS Code.
